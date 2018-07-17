@@ -197,10 +197,32 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807172211546_InitialModel.cs" />
+    <Compile Include="Migrations\201807172211546_InitialModel.Designer.cs">
+      <DependentUpon>201807172211546_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807172226316_AddIsSubscribedToCuster.cs" />
+    <Compile Include="Migrations\201807172226316_AddIsSubscribedToCuster.Designer.cs">
+      <DependentUpon>201807172226316_AddIsSubscribedToCuster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807172235092_AddMembershipType.cs" />
+    <Compile Include="Migrations\201807172235092_AddMembershipType.Designer.cs">
+      <DependentUpon>201807172235092_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807172245124_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201807172245124_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201807172245124_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807172303063_ApplyAnnotationToCustomerName.cs" />
+    <Compile Include="Migrations\201807172303063_ApplyAnnotationToCustomerName.Designer.cs">
+      <DependentUpon>201807172303063_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -285,6 +307,23 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807172211546_InitialModel.resx">
+      <DependentUpon>201807172211546_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807172226316_AddIsSubscribedToCuster.resx">
+      <DependentUpon>201807172226316_AddIsSubscribedToCuster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807172235092_AddMembershipType.resx">
+      <DependentUpon>201807172235092_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807172245124_PopulateMembershipTypes.resx">
+      <DependentUpon>201807172245124_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807172303063_ApplyAnnotationToCustomerName.resx">
+      <DependentUpon>201807172303063_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
